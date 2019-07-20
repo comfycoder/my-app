@@ -16,6 +16,8 @@ import {
 } from  '@angular/material';
 
 import { ConfigComponent }      from './config/config.component';
+import { MessageService }       from './services/message.service';
+import { MessagesComponent }    from './messages/messages.component';
 
 import { AccountListComponent } from './account-list/account-list.component';
 import { AccountCreateComponent } from './account-create/account-create.component';
@@ -30,6 +32,7 @@ import { HomeComponent } from './home/home.component';
   declarations: [
     AppComponent,
     ConfigComponent,
+    MessagesComponent,
     AccountListComponent,
     AccountCreateComponent,
     ContactListComponent,
@@ -50,7 +53,9 @@ import { HomeComponent } from './home/home.component';
     MatButtonModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    MessageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

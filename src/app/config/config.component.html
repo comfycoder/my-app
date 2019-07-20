@@ -1,9 +1,9 @@
 <h3>Get configuration from JSON file</h3>
 <div>
-  <button (click)="clear(); showConfig()">get</button>
-  <button (click)="clear(); showConfigResponse()">getResponse</button>
-  <button (click)="clear()">clear</button>
-  <button (click)="clear(); makeError()">error</button>
+  <button mat-raised-button color="accent" (click)="clear(); showConfig()">get</button>
+  <button mat-raised-button color="accent" (click)="clear(); showConfigResponse()">getResponse</button>
+  <button mat-raised-button color="accent" (click)="clear()">clear</button>
+  <button mat-raised-button color="accent" (click)="clear(); makeError()">error</button>
   <span *ngIf="config">
     <p>Heroes API URL is "{{config.heroesUrl}}"</p>
     <p>Textfile URL is "{{config.textfile}}"</p>

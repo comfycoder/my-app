@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { Config, ConfigService } from './config.service';
-import { MessageService } from '../message.service';
+import { MessageService } from '../services/message.service';
 
 @Component({
   selector: 'app-config',
   templateUrl: './config.component.html',
   providers: [ ConfigService ],
-  styles: ['.error {color: red;}']
+  styleUrls: ['./config.component.css']
 })
 export class ConfigComponent {
   error: any;
