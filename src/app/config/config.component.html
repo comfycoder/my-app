@@ -6,6 +6,7 @@
   <button mat-raised-button color="accent" (click)="clear(); makeError()">error</button>
   <span *ngIf="config">
     <p>Heroes API URL is "{{config.heroesUrl}}"</p>
+    <p>Contacts API URL is "{{config.contactsUrl}}"</p>
     <p>Textfile URL is "{{config.textfile}}"</p>
     <div *ngIf="headers">
       Response headers:

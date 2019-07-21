@@ -4,13 +4,12 @@ import { HttpErrorResponse, HttpResponse } from '@angular/common/http';
 
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
+import { Config } from '../models/config';
 
-export interface Config {
-  heroesUrl: string;
-  textfile: string;
-}
 
-@Injectable()
+@Injectable({
+  providedIn: "root"
+})
 export class ConfigService {
   
   configUrl = 'assets/config.json';

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { Config, ConfigService } from './config.service';
+import { ConfigService } from '../services/config.service';
 import { MessageService } from '../services/message.service';
+import { Config } from '../models/config';
 
 @Component({
   selector: 'app-config',
@@ -33,6 +34,7 @@ export class ConfigComponent {
     this.configService.getConfig_1()
       .subscribe((data: Config) => this.config = {
           heroesUrl: data['heroesUrl'],
+          contactsUrl: data['contactsUrl'],
           textfile:  data['textfile']
       });
   }

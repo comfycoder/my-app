@@ -1,4 +1,5 @@
 {
   "heroesUrl": "api/heroes",
+  "contactsUrl": "http://localhost:3000/contacts",
   "textfile": "assets/textfile.txt"
 }
