@@ -8,12 +8,21 @@ import { ContactListComponent } from './contact-list/contact-list.component';
 import { ContactCreateComponent } from './contact-create/contact-create.component';
 import { ActivityListComponent } from './activity-list/activity-list.component';
 import { ActivityCreateComponent } from './activity-create/activity-create.component';
+import { MyLineChartComponent } from './my-line-chart/my-line-chart.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
-  { path:  '', redirectTo:  'contacts', pathMatch:  'full' },
   {
     path: 'home',
     component: HomeComponent
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent
+  },
+  {
+    path: 'mylinechart',
+    component: MyLineChartComponent
   },
   {
     path: 'accounts',
@@ -38,6 +47,18 @@ const routes: Routes = [
   {
     path: 'create-activity',
     component: ActivityCreateComponent
+  },
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
+    path: '**',
+    component: HomeComponent,
+    data: {
+      title: 'Not Found'
+    }
   }
 ];
 
