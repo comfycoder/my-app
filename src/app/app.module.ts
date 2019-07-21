@@ -12,7 +12,12 @@ import {
   MatIconModule, 
   MatSidenavModule, 
   MatListModule, 
-  MatButtonModule 
+  MatButtonModule, 
+  MatTableModule,
+  MatPaginatorModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatSortModule
 } from  '@angular/material';
 
 import { ConfigComponent }      from './config/config.component';
@@ -51,6 +56,11 @@ import { HomeComponent } from './home/home.component';
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
+    MatFormFieldModule,
+    MatInputModule,
     AppRoutingModule
   ],
   providers: [
