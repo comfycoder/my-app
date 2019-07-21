@@ -3,7 +3,7 @@
       <button mat-icon-button>
         <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
       </button>
-      <h1><a mat-button [routerLink]="'/home'">{{ title }}</a></h1>
+      <a mat-button [routerLink]="'/home'"><h1>{{ title }}</h1></a>
       <span class="menu-spacer"></span>
       <div>
         <a mat-button [routerLink]="'/accounts'"> Accounts </a>
