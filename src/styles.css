@@ -2,7 +2,19 @@
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-html, body { height: 100%; }
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* ::-webkit-scrollbar {
+    width: 0px; 
+} */
+
+html, body { 
+    height: 100%; 
+}
 
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
@@ -16,4 +28,11 @@ html, body, html * {
        Every toolbar row uses a flexbox row layout. */
     flex: 1 1 auto;
 }
+
+/* .fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%  !important;
+} */
 
