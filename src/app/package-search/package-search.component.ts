@@ -8,7 +8,8 @@ import { NpmPackageInfo, PackageSearchService } from './package-search.service';
 @Component({
   selector: 'app-package-search',
   templateUrl: './package-search.component.html',
-  providers: [ PackageSearchService ]
+  styleUrls: ['./package-search.component.css'],
+  providers: [PackageSearchService]
 })
 export class PackageSearchComponent implements OnInit {
   withRefresh = false;
@@ -31,6 +32,6 @@ export class PackageSearchComponent implements OnInit {
   constructor(private searchService: PackageSearchService) { }
 
 
-  toggleRefresh() { this.withRefresh = ! this.withRefresh; }
+  toggleRefresh() { this.withRefresh = !this.withRefresh; }
 
 }
