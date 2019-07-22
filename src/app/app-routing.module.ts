@@ -10,6 +10,7 @@ import { ActivityListComponent } from './activity-list/activity-list.component';
 import { ActivityCreateComponent } from './activity-create/activity-create.component';
 import { MyLineChartComponent } from './my-line-chart/my-line-chart.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AddressCreateComponent } from './address-create/address-create.component';
 
 const routes: Routes = [
   {
@@ -47,6 +48,10 @@ const routes: Routes = [
   {
     path: 'create-activity',
     component: ActivityCreateComponent
+  },
+  {
+    path: 'create-address',
+    component: AddressCreateComponent
   },
   {
     path: '',
