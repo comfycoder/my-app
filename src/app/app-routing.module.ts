@@ -11,6 +11,7 @@ import { ActivityCreateComponent } from './activity-create/activity-create.compo
 import { MyLineChartComponent } from './my-line-chart/my-line-chart.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AddressCreateComponent } from './address-create/address-create.component';
+import { PackageSearchComponent } from './package-search/package-search.component';
 
 const routes: Routes = [
   {
@@ -52,6 +53,10 @@ const routes: Routes = [
   {
     path: 'create-address',
     component: AddressCreateComponent
+  },
+  {
+    path: 'package-search',
+    component: PackageSearchComponent
   },
   {
     path: '',
